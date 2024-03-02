@@ -1,5 +1,6 @@
 Description et instructions du jeu:
 Le joueur lance les cinq dés pour obtenir un motif (c'est-à-dire une disposition particulière des dés) qui rapporte des points. Il a droit à trois lancers de dés par tour. Après chaque lancer, il peut choisir de mettre de côté certains de ces dés et de relancer les autres.
+</br>
 Après un maximum de trois lancers, le joueur doit choisir entre marquer une figure pour laquelle il remplit les conditions ou rayer une figure.  Nous avons les figures:
 1-> dans laquelle, la condition est d’obtenir un maximum de dés de face1; on calcule ensuite la somme des  dés de face1 et le score maximum doit etre de 5 points;
 2-> dans laquelle, la condition est d’obtenir un maximum de dés de face2; on calcule ensuite la somme des  dés de face2 et le score maximum doit etre de 10 points;
