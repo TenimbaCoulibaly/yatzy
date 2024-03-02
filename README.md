@@ -16,13 +16,13 @@ Yatzee-> dans laquelle, la condition est d’obtenir cinq dés de même valeur; 
 Chance-> dans laquelle, la condition qu'il n'y a aucune condition et le score maximum est de 30 points.
 
 ![image1](image1.png)
-![image2](/Users/mamicoulibaly/Documents/image2.png)
-![image3](/Users/mamicoulibaly/Documents/image3.png)
-![image4](/Users/mamicoulibaly/Documents/image4.png)
-![image5](/Users/mamicoulibaly/Documents/image5.png)
-![image6](/Users/mamicoulibaly/Documents/image6.png)
-![image7](/Users/mamicoulibaly/Documents/image7.png)
-![image8](/Users/mamicoulibaly/Documents/image8.png)
+![image2](image2.png)
+![image3](image3.png)
+![image4](image4.png)
+![image5](image5.png)
+![image6](image6.png)
+![image7](image7.png)
+![image8](image8.png)
 
 
 
