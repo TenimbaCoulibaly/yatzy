@@ -1,0 +1,222 @@
+/* Tenimba Coulibaly 300086545*/
+
+
+html,body{
+  background-color: #cde2e3;
+}
+#gameContainer{
+  display: flex;
+  width:100%;
+  height: 100%;
+  margin-top: 40px;
+  align-content: center;
+  justify-content: center;
+}
+.table {
+  display: table;
+  border-collapse: collapse;
+  width:30%;
+  background: linear-gradient(to bottom,white, rgb(203 225 225));
+  cursor:pointer;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: black;
+  font-family: "Times New Roman";
+  font-size: 16px;
+  margin: 30px;
+}
+.header {
+  display: table-header-group;
+  background-color: rgb(246, 248, 248);
+}
+.header-cell {
+  display: table-cell;
+  padding:7px;
+  text-align: center;
+  width: 20%;
+  border-color: 2px solid, whitesmoke;
+  color: 2px solid, rgb(1, 66, 66);
+  font-weight: bold;
+  font-size: 15px;
+}
+.header-cell:first-child {
+  border-top-left-radius: 10px;
+}
+.header-cell:last-child {
+  border-top-right-radius: 10px;
+}
+.row {
+  display: table-row;
+}
+.row:last-child{
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 2px solid rgb(4,83,83);
+}
+.cell {
+  display: table-cell;
+  border: 1px solid;
+  padding: 7px;
+  text-align: center;
+  width:20%;
+  border-color: rgb(4,83,83);
+  color:rgb(216,144,192);
+  font-size: 12px;
+}
+.cell:first-child {
+  width:60%;
+  text-align: left;
+  color: rgb(4,83,83);
+  font-weight: bold;
+}
+#totalCaption {
+  font-size: 18px;
+}
+#bonusCaption {
+  border-bottom: 2px solid rgb(4,83,83);
+}
+#sumCaption {
+  border-top: 2px solid rgb(4,83,83);
+}
+#bonusCaption > *,#sumCaption > * {
+  font-weight: bold;
+}
+
+
+
+#playArea {
+  min-height: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.dice-container {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2%;
+  ;
+  margin-top: auto;
+}
+.dice {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 10px;
+  transition: all 0.4s linear;
+  z-index: 1000;
+}
+.face {
+  width:100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.face:hover {
+  transform: scale(1.1);
+}
+#endGameMessage {
+  align-self: center;
+  color: yellow;
+  font-size: 80px;
+  width:100%;
+  text-align: center;
+  transform: translateX(5%);
+}
+#roll {
+  width:90px;
+  height:72px;
+  border-radius: 80%;
+  border:transparent;
+  align-self: flex-end;
+  color: rgb(48, 43, 43);
+  font-weight: bold;
+  background-image: url("button.png");
+  background-size: cover;
+  cursor: pointer;
+}
+#roll:hover {
+  transform: scale(1.1);
+}
+
+#board{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:60%;
+  min-height: 80%;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+}
+#board1 {
+  width:60%;
+  min-height: 80%;
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgb(255, 146, 146) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
