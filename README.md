@@ -15,7 +15,7 @@ Grande suite ou Large straight-> dans laquelle, la condition est d’obtenir une
 Yatzee-> dans laquelle, la condition est d’obtenir cinq dés de même valeur; score maximum doit etre de 50 points;
 Chance-> dans laquelle, la condition qu'il n'y a aucune condition et le score maximum est de 30 points.
 
-![image1](yatzy/image1.png)
+![image1](image1.png)
 ![image2](/Users/mamicoulibaly/Documents/image2.png)
 ![image3](/Users/mamicoulibaly/Documents/image3.png)
 ![image4](/Users/mamicoulibaly/Documents/image4.png)
