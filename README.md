@@ -1,3 +1,10 @@
+*Contrairement a la soumission precedente, je n'ai pas une grande maitrise de PHP. J'ai apporté les changements qui me semblaient être nécéssaire au code précédent dans le fichier Assignment3 pour la version PHP. J'espere recevoir un retour de votre part afin de m'aider à m'ameliorer avec PHP.*
+
+
+</br>
+</br>
+</br>
+
 **Description et instructions du jeu:** 
 ---
 </br>
@@ -59,9 +66,35 @@ Ci-dessous se trouve un exemple en images:</br>
 ![image6](image6.png)
 ![image7](image7.png)
 ![image8](image8.png)
+</br>
+</br>
+</br>
+</br>
 
 
 
 
+
+**Implementation du jeu:**
+---
+<br>
+
+Cette documentation décrit la mise en œuvre du jeu Yatzy dans lequel la logique du jeu, y compris le lancement des dés et le calcul des scores, est gérée par un backend PHP, tandis que l'interface utilisateur et les interactions sont gérées par JavaScript qui effectue des appels AJAX au serveur PHP. Cette approche permet de dissocier la logique du jeu de la couche de présentation, ce qui permet d'obtenir une base de code plus structurée et plus facile à maintenir.
+<br>
+</br>
+
+Le backend PHP est responsable du maintien de l'état du jeu, du traitement des actions de jeu (comme le lancement des dés et le calcul des scores) et du stockage de ces informations dans la session pour une persistance à travers les requêtes. Au début, une session est lancée pour suivre l'état du jeu à travers plusieurs requêtes AJAX. Cela comprend les scores des joueurs, le tour du joueur en cours et le nombre de jets de dés effectués pendant le tour en cours. 
+<br>
+changeTurn() : Change le joueur actif et réinitialise le nombre de jets pour le nouveau tour.
+calculateEndGameScore() : Détermine le vainqueur en fonction des scores totaux accumulés par chaque joueur ou déclare un match nul si les scores sont égaux.
+Fonctions de calcul des scores :
+<br>
+</br>
+Les fonctions telles que calculateOnes(), calculateTwos(), etc., prennent en entrée un tableau de valeurs de dés et calculent le score pour la catégorie correspondante. Ces fonctions utilisent les fonctions de manipulation de tableaux de PHP pour calculer les scores selon les règles de Yatzy.
+<br>
+En ce qui concerne les fonctions AJAX:
+changeTurn() : Envoie une requête pour changer de tour et met à jour l'interface utilisateur pour refléter le nouveau joueur actif.
+calculateScores(dice) : Envoie la configuration actuelle des dés au serveur pour le calcul du score. Le tableau des scores est ensuite mis à jour en fonction de la réponse.
+getEndGameScore() : Demande au serveur les résultats de la fin de la partie et affiche le message de victoire ou de match nul.
 
 
