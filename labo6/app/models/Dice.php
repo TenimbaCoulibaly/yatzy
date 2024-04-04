@@ -1,10 +1,13 @@
 <?php
-namespace Yatzy;
 
 class Dice {
-    public function roll() {
-        $randomNumber = mt_rand(1, 6);
-        
-        return $randomNumber;
+    public function roll($min, $max) {
+        return rand($min, $max);
     }
 }
+
+$dice = new Dice();
+$result = $dice->roll(1, 6); // Lance un dé à 6 faces
+echo "Résultat du tirage : " . $result;
+
+?>
